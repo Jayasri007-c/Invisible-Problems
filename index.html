@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Invisible Problems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Invisible Problems</h1>
+      <p>Problems that don’t scream, but silently shape our future.</p>
+    </section>
+
+    <!-- PROBLEMS -->
+    <section class="problems">
+      <div class="card" onclick="openModal('ewaste')">
+        <h2>E-Waste</h2>
+        <p>Discarded electronics silently poison our planet.</p>
+      </div>
+
+      <div class="card" onclick="openModal('digital')">
+        <h2>Digital Addiction</h2>
+        <p>Endless screens slowly drain focus and well-being.</p>
+      </div>
+
+      <div class="card" onclick="openModal('food')">
+        <h2>Food Wastage</h2>
+        <p>Food is wasted daily while millions remain hungry.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">×</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+      <h3>What Can Be Done</h3>
+      <ul id="modal-solutions"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
